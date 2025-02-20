@@ -14,7 +14,8 @@ export default {
 
 	// for Github Pages
     paths: {
-      base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
+      // base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
+      base: process.argv.includes('dev') ? '' : '/iitb-rocket-team'
     }
   }
 };
