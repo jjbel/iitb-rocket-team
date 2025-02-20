@@ -1,3 +1,7 @@
+// Static Site Generation
+// https://svelte.dev/docs/kit/adapter-static
+// https://khromov.se/the-missing-guide-to-understanding-adapter-static-in-sveltekit/
+
 import adapter from '@sveltejs/adapter-static';
 
 export default {
@@ -12,7 +16,7 @@ export default {
       strict: true
     }),
 
-	// for Github Pages
+    // for Github Pages
     paths: {
       // base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
       base: process.argv.includes('dev') ? '' : '/iitb-rocket-team'
