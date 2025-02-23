@@ -5,11 +5,11 @@
   import logo from '$lib/rtlogo1.png';
 
   const links = [
-    ['/', 'Home'],
-    ['/sponsor', 'Sponsor'],
-    ['/sponsor', 'Team'],
-    ['/sponsor', 'Rockets'],
-    ['/sponsor', 'Contact']
+    ['', 'Home'],
+    ['sponsor', 'Sponsor'],
+    ['sponsor', 'Team'],
+    ['sponsor', 'Rockets'],
+    ['sponsor', 'Contact']
   ];
 </script>
 
