@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --navbar-height: 5rem;
+}
+
+/* remove top space,  */
+* {
+  margin: 0;
+  padding: 0;
+
+  color: white;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: rgb(12, 12, 12);
+}
+
+a {
+  text-decoration: none;
+}
