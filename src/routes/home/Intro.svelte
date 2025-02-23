@@ -17,8 +17,6 @@
 </div>
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
-
   #intro {
     padding: 16vh 10vw 0 10vw;
 
@@ -40,11 +38,11 @@
     -webkit-text-fill-color: transparent;
   }
 
-  #intro h2 {
+  h2 {
     font-size: 3rem;
   }
 
-  #intro h1 {
+  h1 {
     font-size: 5rem;
   }
 
