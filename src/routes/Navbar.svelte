@@ -7,13 +7,14 @@
   const links = [
     ['/', 'Home'],
     ['/sponsor', 'Sponsor'],
-    ['/sponsor', 'Teams'],
+    ['/sponsor', 'Team'],
+    ['/sponsor', 'Rockets'],
     ['/sponsor', 'Contact']
   ];
 </script>
 
 <nav>
-  <img src={logo} alt="" />
+  <img src={logo} alt="IITB Rocket Team" />
 
   <div class="links">
     {#each links as link}
