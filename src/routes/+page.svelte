@@ -1,4 +1,5 @@
 <script>
+  import ChevronsRight from 'lucide-svelte/icons/chevrons-right';
 </script>
 
 <div id="intro">
@@ -10,15 +11,28 @@
     <h1>Rocketry</h1>
   </div>
 
-  <a href="/contact" id="contact"> Contact Us </a>
+  <a href="/contact" id="contact">
+    Contact Us <ChevronsRight id="chevrons" color="#000000" />
+  </a>
 </div>
 
 <div id="tech">
   <h2>Feat. the <span id="hottest">Hottest</span> Tech</h2>
-  <p>
-    <strong>FLYTE</strong> - Our latest flight computer.
-    <a href="https://github.com/IITB-Rocket-Team-Avionics/FLYTE">Check it out on Github</a>
-  </p>
+  <ul>
+    <li>
+      <strong>FLYTE</strong> - Our latest flight computer.
+      <a href="https://github.com/IITB-Rocket-Team-Avionics/FLYTE"
+        >Check it out on Github</a
+      >
+    </li>
+
+    <li>
+      <strong>Groundstation</strong> - Stream and view telemetry in realtime.
+      <a href="https://github.com/jjbel/pi-pico-telemetry"
+        >Check it out on Github</a
+      >
+    </li>
+  </ul>
 </div>
 
 <style>
@@ -58,7 +72,11 @@
   }
 
   #contact {
-    display: inline-block;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    gap: 0.3rem;
+
     background-color: white;
     color: black;
     border: none;
@@ -89,11 +107,29 @@
     -webkit-text-fill-color: transparent;
   }
 
-  #tech p {
-    font-size: 1.6rem;
+  #tech ul {
+    font-size: 1.4rem;
+    margin-top: 0.2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
   }
 
-  #tech p a {
+  #tech ul a {
     text-decoration: underline;
+  }
+
+  @media (max-aspect-ratio: 1) {
+    #intro {
+      background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('/agastya-5817.jpg');
+
+      background-size: cover;
+      background-position:
+        0 0,
+        50% 0vh;
+    }
   }
 </style>

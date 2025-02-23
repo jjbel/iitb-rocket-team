@@ -2,7 +2,7 @@
   // https://www.okupter.com/blog/deploy-sveltekit-website-to-github-pages
   import { base } from '$app/paths';
 
-  import logo from '$lib/rtlogo1.png'
+  import logo from '$lib/rtlogo1.png';
 
   const links = [
     ['/', 'Home'],
@@ -16,7 +16,7 @@
 <nav>
   <img src={logo} alt="IITB Rocket Team" />
 
-  <div class="links">
+  <div id="links">
     {#each links as link}
       <a href="{base}/{link[0]}">{link[1]}</a>
     {/each}
@@ -38,12 +38,19 @@
     height: 100%;
   }
 
-  .links {
+  #links {
     display: flex;
     padding: 0.9rem 4rem;
     font-size: 1.4rem;
     gap: 3rem;
     justify-content: center;
     align-items: center;
+  }
+
+  @media (max-aspect-ratio: 1) {
+    #links {
+      display: none;
+      /* TODO */
+    }
   }
 </style>
