@@ -1,5 +1,6 @@
 <script>
   import ChevronsRight from 'lucide-svelte/icons/chevrons-right';
+  import { base } from '$app/paths';
 </script>
 
 <div id="intro">
@@ -10,7 +11,7 @@
     <h1>Rocketry</h1>
   </div>
 
-  <a href="/contact" id="contact">
+  <a href="{base}/contact" id="contact">
     Contact Us <ChevronsRight id="chevrons" color="#000000" />
   </a>
 </div>
