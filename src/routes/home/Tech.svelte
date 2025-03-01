@@ -4,7 +4,6 @@
 </script>
 
 <div id="tech">
-  <h2>Feat. the <span id="hottest">Hottest</span> Tech</h2>
   <ul>
     <li>
       <h3>FLYTE</h3>
@@ -56,26 +55,7 @@
 </div>
 
 <style>
-  #tech {
-    padding: 2vh 10% 2vh 10%;
-  }
-
-  h2 {
-    font-size: 3.2rem;
-  }
-
-  #hottest {
-    font-family: 'Yellowtail', serif;
-    font-size: 4.5rem;
-    padding-right: 1.1rem;
-
-    background: linear-gradient(to right, #ff2066, #ff5618);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
   ul {
-    font-size: 1.4rem;
     margin-top: 0.2rem;
 
     display: flex;
@@ -85,7 +65,7 @@
   }
 
   ul p {
-    font-size: 1rem;
+    font-size: 1.07rem;
     margin-top: 1rem;
   }
 
