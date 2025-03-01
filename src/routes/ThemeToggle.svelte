@@ -4,6 +4,7 @@
  
  https://codepen.io/Umer_Farooq/pen/eYJgKGN
  https://svelte.dev/playground/ed4fef4beceb4b0eb295d1f9fdf3bd62?version=5.20.5 
+ theme toggle of https://lucide.dev/
 -->
 
 <script>
