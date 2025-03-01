@@ -42,7 +42,7 @@
 </div>
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+  /* @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap'); */
 
   #info {
     padding: 0vh 10% 0vh 10%;

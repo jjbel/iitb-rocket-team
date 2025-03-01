@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Yellowtail&display=swap');
 
 :root {
   --navbar-height: 4rem;
@@ -20,7 +21,7 @@ body.dark {
   --fg: #ffffff;
   --bg: #000000;
 
-  --fg-gray: #9c9c9c;
+  --fg-gray: #8c8c8c;
 }
 
 /* remove top space,  */
