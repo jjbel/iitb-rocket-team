@@ -34,19 +34,27 @@
     border-bottom: 1.5px solid var(--fg-gray);
   }
 
+  /* on mobile, the bg image is dark, so use the light theme styling only on desktop */
+
+  @media (min-aspect-ratio: 1) {
+    :global(body.light) #title {
+      background: linear-gradient(135deg, black, #0004ff);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    :global(body.light) #h1-glow {
+      text-shadow: none;
+    }
+  }
+
   #title {
-    background: linear-gradient(135deg, var(--fg), #0004ff);
+    background: linear-gradient(135deg, white, #b1b4fc);
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
-  :global(body.dark) #title {
-    background: linear-gradient(135deg, var(--fg), #b1b4fc);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  :global(body.dark) #h1-glow {
+  #h1-glow {
     text-shadow: rgba(232, 242, 255, 0.76) 0.1rem 0 0.7rem;
   }
 
