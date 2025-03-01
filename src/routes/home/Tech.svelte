@@ -1,6 +1,6 @@
 <script>
-  import flyte from '$lib/flyte.jpg';
-  import telemetry from '$lib/telemetry.jpg';
+  import flyte from '$lib/flyte_1.jpg';
+  import telemetry from '$lib/telemetry_1.jpg';
 </script>
 
 <div id="tech">

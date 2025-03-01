@@ -6,7 +6,7 @@
 </script>
 
 <!-- TODO later make a guide for these base url fixes for github pages -->
-<div id="intro" style="--bg-image-url: url('{base}/agastya-5817.jpg');">
+<div id="intro" style="--bg-image-url: url('{base}/agastya-5817_2.jpg');">
   <div id="title">
     <h2>Reaching New</h2>
     <h2>Frontiers in</h2>
@@ -39,10 +39,10 @@
       linear-gradient(to right, var(--bg) 45%, transparent 80%),
       var(--bg-image-url);
 
-    background-size: cover;
+    background-size: contain;
     background-position:
       0 0,
-      30vw 0vh;
+      -10vw 0vh;
 
     height: calc(100vh - var(--navbar-height));
 
