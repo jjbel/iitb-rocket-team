@@ -12,7 +12,7 @@
   </div>
 
   <a href="{base}/contact" id="contact">
-    Contact Us <ChevronsRight id="chevrons" color="#000000" />
+    Contact Us <ChevronsRight id="chevrons" color="var(--bg)" />
   </a>
 </div>
 
@@ -21,7 +21,7 @@
     padding: 16vh 10vw 0 10vw;
 
     background-image:
-      linear-gradient(to right, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0) 70%),
+      linear-gradient(to right, var(--bg) 50%, transparent 70%),
       url('/agastya-5817.jpg');
 
     background-size: cover;
@@ -33,9 +33,19 @@
   }
 
   #title {
-    background: linear-gradient(135deg, #ffffff, #b1b4fc);
+    background: linear-gradient(135deg, var(--fg), #0004ff);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  :global(body.dark) #title {
+    background: linear-gradient(135deg, var(--fg), #b1b4fc);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  :global(body.dark) #h1-glow {
+    text-shadow: rgba(232, 242, 255, 0.76) 0 0 0.7rem;
   }
 
   h2 {
@@ -46,18 +56,14 @@
     font-size: 5rem;
   }
 
-  #h1-glow {
-    text-shadow: rgba(232, 242, 255, 0.76) 0 0 0.7rem;
-  }
-
   #contact {
     display: flex;
     width: fit-content;
     align-items: center;
     gap: 0.3rem;
 
-    background-color: white;
-    color: black;
+    background-color: var(--fg);
+    color: var(--bg);
     border: none;
     font-weight: 600;
 

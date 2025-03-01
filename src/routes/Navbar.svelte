@@ -1,8 +1,8 @@
 <script>
   // https://www.okupter.com/blog/deploy-sveltekit-website-to-github-pages
   import { base } from '$app/paths';
-
   import logo from '$lib/rtlogo1.png';
+  import ThemeToggle from './ThemeToggle.svelte';
 
   const links = [
     ['', 'Home'],
@@ -21,17 +21,19 @@
       <a href="{base}/{link[0]}">{link[1]}</a>
     {/each}
   </div>
+
+  <ThemeToggle />
 </nav>
 
 <style>
   nav {
     display: flex;
-    /* background-color: rgb(98, 98, 98); */
+    background-color: var(--bg);
 
-    color: rgb(232, 232, 232);
     padding: 0 4rem;
     height: var(--navbar-height);
     justify-content: center;
+    align-items: center;
   }
 
   img {
@@ -45,6 +47,10 @@
     gap: 3rem;
     justify-content: center;
     align-items: center;
+  }
+
+  a {
+    color: var(--fg);
   }
 
   @media (max-aspect-ratio: 1) {

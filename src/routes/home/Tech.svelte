@@ -90,11 +90,15 @@
   }
 
   li {
-    background-color: rgba(104, 104, 104, 0.13);
+    background-color: rgba(155, 155, 155, 0.13);
     padding: 0.8rem;
     border-radius: 0.6rem;
     width: 22rem;
     height: fit-content;
+  }
+
+  :global(body.dark) li {
+    background-color: rgba(104, 104, 104, 0.23);
   }
 
   img {

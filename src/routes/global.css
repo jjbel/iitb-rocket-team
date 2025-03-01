@@ -4,18 +4,28 @@
   --navbar-height: 4rem;
 }
 
+body {
+  --fg: #000000;
+  --bg: #ffffff;
+
+  color: var(--fg);
+  background-color: var(--bg);
+}
+
+/* to select components when dark: :global(body.dark) component{} */
+
+body.dark {
+  --fg: #ffffff;
+  --bg: #000000;
+}
+
 /* remove top space,  */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 
-  color: white;
   font-family: Inter, Arial, Helvetica, sans-serif;
-}
-
-body {
-  background-color: rgb(12, 12, 12);
 }
 
 a {
@@ -23,5 +33,5 @@ a {
 }
 
 ul {
-  list-style-type: none
+  list-style-type: none;
 }
