@@ -1,7 +1,8 @@
 <script>
   // https://www.okupter.com/blog/deploy-sveltekit-website-to-github-pages
   import { base } from '$app/paths';
-  import logo from '$lib/rtlogo1.png';
+  import logo_white from '$lib/rtlogo_white.svg';
+  import logo_black from '$lib/rtlogo_black.svg';
   import ThemeToggle from './ThemeToggle.svelte';
 
   const links = [
@@ -14,7 +15,8 @@
 </script>
 
 <nav>
-  <img src={logo} alt="IITB Rocket Team" />
+  <img src={logo_white} id="logo_white" alt="IITB Rocket Team" />
+  <img src={logo_black} id="logo_black" alt="IITB Rocket Team" />
 
   <div id="links">
     {#each links as link}
@@ -38,6 +40,20 @@
 
   img {
     height: 100%;
+  }
+
+  #logo_white {
+    display: none;
+  }
+
+  :global(body.dark) {
+    #logo_black {
+      display: none;
+    }
+
+    #logo_white {
+      display: block;
+    }
   }
 
   #links {
