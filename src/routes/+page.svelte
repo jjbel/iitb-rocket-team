@@ -1,8 +1,10 @@
 <script>
   import Intro from './home/Intro.svelte';
+
   import Achievements from './home/Achievements.svelte';
   import Rockets from './home/Rockets.svelte';
   import Tech from './home/Tech.svelte';
+  import Testimonials from './home/Testimonials.svelte';
 </script>
 
 <Intro />
@@ -32,6 +34,11 @@
     > Tech
   </h2>
   <Tech />
+  
+  <h2>
+    Testimonials
+  </h2>
+  <Testimonials />
 </div>
 
 <style>
