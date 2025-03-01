@@ -3,7 +3,7 @@
   import { base } from '$app/paths';
 </script>
 
-<div id="intro">
+<div id="intro" style="--bg-image-url: url('{base}/agastya-5817.jpg');">
   <div id="title">
     <h2>Reaching New</h2>
     <h2>Frontiers in</h2>
@@ -22,7 +22,7 @@
 
     background-image:
       linear-gradient(to right, var(--bg) 50%, transparent 70%),
-      url('/agastya-5817.jpg');
+      var(--bg-image-url);
 
     background-size: cover;
     background-position:
