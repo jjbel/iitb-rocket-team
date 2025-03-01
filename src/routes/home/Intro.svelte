@@ -30,6 +30,8 @@
       30vw 0vh;
 
     height: calc(100vh - var(--navbar-height));
+
+    border-bottom: 1.5px solid var(--fg-gray);
   }
 
   #title {
@@ -45,7 +47,7 @@
   }
 
   :global(body.dark) #h1-glow {
-    text-shadow: rgba(232, 242, 255, 0.76) 0 0 0.7rem;
+    text-shadow: rgba(232, 242, 255, 0.76) 0.1rem 0 0.7rem;
   }
 
   h2 {

@@ -8,6 +8,8 @@ body {
   --fg: #000000;
   --bg: #ffffff;
 
+  --fg-gray: #232323;
+
   color: var(--fg);
   background-color: var(--bg);
 }
@@ -17,6 +19,8 @@ body {
 body.dark {
   --fg: #ffffff;
   --bg: #000000;
+
+  --fg-gray: #9c9c9c;
 }
 
 /* remove top space,  */

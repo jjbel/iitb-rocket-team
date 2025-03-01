@@ -36,6 +36,8 @@
     height: var(--navbar-height);
     justify-content: center;
     align-items: center;
+
+    border-bottom: 1.5px solid var(--fg-gray);
   }
 
   img {
