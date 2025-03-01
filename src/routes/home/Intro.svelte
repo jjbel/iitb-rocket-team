@@ -3,6 +3,7 @@
   import { base } from '$app/paths';
 </script>
 
+<!-- TODO later make a guide for these base url fixes for github pages -->
 <div id="intro" style="--bg-image-url: url('{base}/agastya-5817.jpg');">
   <div id="title">
     <h2>Reaching New</h2>
@@ -21,7 +22,7 @@
     padding: 16vh 10vw 0 10vw;
 
     background-image:
-      linear-gradient(to right, var(--bg) 50%, transparent 70%),
+      linear-gradient(to right, var(--bg) 45%, transparent 80%),
       var(--bg-image-url);
 
     background-size: cover;
